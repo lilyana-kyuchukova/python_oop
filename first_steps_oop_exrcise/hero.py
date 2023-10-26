@@ -10,7 +10,7 @@ class Hero:
             self.health = 0
             return f"{self.name} was defeated"
 
-    def heal(self, amount: int):
+    def heal(self, amount: int) -> None:
         self.health += amount
 
 
