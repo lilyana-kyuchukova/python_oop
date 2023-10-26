@@ -1,15 +1,15 @@
 class Cup:
-    def __init__(self, size, quantity):
-        self.size = size
+    def __init__(self, capacity: int, quantity: int):
+        self.size = capacity
         self.quantity = quantity
-        self.availability = size - quantity
+        self.availability = capacity - quantity
 
-    def fill(self, quantity):
+    def fill(self, quantity) -> None:
         if self.availability >= quantity:
             self.quantity += quantity
             self.availability -= quantity
 
-    def status(self):
+    def status(self) -> int:
         return self.availability
 
 
