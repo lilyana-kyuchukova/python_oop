@@ -17,7 +17,7 @@ class Trainer:
     def release_pokemon(self, pokemon_name: str) -> str:
 
         # try:
-        #     pokemon = [p for p in self.pokemons if p.name == pokemon_name]
+        #     pokemon = [p for p in self.pokemons if p.name == pokemon_name][0]
         # except IndexError:
         #     return "Pokemon is not caught"
 
