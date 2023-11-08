@@ -1,22 +1,23 @@
 import functools
+from typing import List
 
 
 class Calculator:
     @staticmethod
-    def add(*args):
+    def add(*args: List[int]):
+        # for consistency with reduce otherwise sum(args)
         return functools.reduce(lambda a, b: a + b, args)
-        # return sum(args)
 
     @staticmethod
-    def multiply(*args):
+    def multiply(*args: List[int]):
         return functools.reduce(lambda a, b: a * b, args)
 
     @staticmethod
-    def divide(*args):
+    def divide(*args: List[int]):
         return functools.reduce(lambda a, b: a / b, args)
 
     @staticmethod
-    def subtract(*args):
+    def subtract(*args: List[int]):
         return functools.reduce(lambda a, b: a - b, args)
 
 
