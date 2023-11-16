@@ -10,7 +10,7 @@ class Mouse(Mammal):
     @property
     def gained_weight(self):
         return 0.10
-
+    @property
     def food_eaten_by_type(self):
         return [Vegetable, Fruit]
 
@@ -23,7 +23,7 @@ class Dog(Mammal):
     @property
     def gained_weight(self):
         return 0.40
-
+    @property
     def food_eaten_by_type(self):
         return [Meat]
 
@@ -36,7 +36,7 @@ class Cat(Mammal):
     @property
     def gained_weight(self):
         return 0.30
-
+    @property
     def food_eaten_by_type(self):
         return [Vegetable, Meat]
 
@@ -49,6 +49,6 @@ class Tiger(Mammal):
     @property
     def gained_weight(self):
         return 1.00
-
+    @property
     def food_eaten_by_type(self):
         return [Meat]
