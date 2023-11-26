@@ -12,9 +12,9 @@ class CatTests(unittest.TestCase):
         expected_sleepy = self.cat.sleepy
         expected_size = self.cat.size
 
-        self.assertFalse(expected_sleepy, False)
-        self.assertFalse(expected_fed, False)
-        self.assertFalse(expected_size, 0)
+        self.assertFalse(expected_sleepy)
+        self.assertFalse(expected_fed)
+        self.assertEqual(expected_size, 0)
         self.assertEqual(self.cat.name, "Tochka")
 
     def test_eat(self):
