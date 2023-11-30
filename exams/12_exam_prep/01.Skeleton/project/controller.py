@@ -40,7 +40,6 @@ class Controller:
         else:
             raise Exception(f"There are no {sustenance_type.lower()} supplies left!")
 
-
         # if player.stamina + supply.energy > 100:
         #     player.stamina = 100
         # else:
